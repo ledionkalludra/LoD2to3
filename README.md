@@ -8,8 +8,3 @@ This project visualizes a building from a CityGML (.gml) file in 3D using Python
 - Extracting building polygons (Wall/Ground surfaces)
 - 3D rendering using matplotlib
 - Automatic axis scaling and equal aspect ratio for accurate geometry display
-
-You need to adjust the path to your GML file in the code:
-gml_file = r"C:\DHBW\Studienarbeit\Data\Data_LoD2\LoD2_32_533_5279_1_BW_DHBW_ZU.gml"
-
-You need to install matplotlib
