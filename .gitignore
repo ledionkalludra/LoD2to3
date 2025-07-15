@@ -1,0 +1,17 @@
+# Models and large files
+models/
+*.pth
+*.pt
+*.onnx
+
+# Python cache
+__pycache__/
+*.pyc
+
+# MacOS / Windows
+.DS_Store
+Thumbs.db
+
+# Logs, data, zips
+*.log
+*.zip
