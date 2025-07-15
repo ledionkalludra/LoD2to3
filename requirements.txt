@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scipy
+opencv-python
+torch
+torchvision
+segment-anything
+shapely
+pyproj
+exifread
