@@ -37,3 +37,9 @@ According to the provider, attribution must be given as follows:
 
 The data has been processed in this project for academic research purposes.
 
+## Setup
+
+conda env create --name mein_env -f environment.yml
+conda activate mein_env
+
+
