@@ -1,5 +1,4 @@
-# Models and large files
-models/
+# Large files
 *.pth
 *.pt
 *.onnx

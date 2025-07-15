@@ -39,8 +39,8 @@ MODEL_PATH = ROOT / "models/sam_vit_h_4b8939.pth"
 TARGET_IDS = ["DEBW_0010002nb5I", "DEBW_0010002nb5H"]
 
 # not uses
-# CSV_CAM_PATH = ROOT / "data/intermediate/camera.csv"
-# FASSADEN_CSV_PATH = ROOT / "data/intermediate/facade_contours.csv"
+# CSV_CAM_PATH = ROOT / "camera.csv"
+# FASSADEN_CSV_PATH = ROOT / "facade_contours.csv"
 
 TARGET_IDS = ["DEBW_0010002nb5I", "DEBW_0010002nb5H"]
 OFFSET_X, OFFSET_Y, OFFSET_Z = 5, 5, 5
@@ -400,7 +400,7 @@ def main():
                 fenster_hit_pts.append(project_point_to_plane(hit, p0, normal))
             window_hits_all.append(np.array(fenster_hit_pts))
 
-        # === zusätzlicher 3D-Plot der geschlossenen Polygone ===
+        # 3D-Plot
         if len(hits_projected) >= 3:
             hp = np.vstack([hits_projected, hits_projected[0]])
             ax.plot(hp[:, 0], hp[:, 1], hp[:, 2], color='green', label='Hit-Fassade')
@@ -421,7 +421,7 @@ def main():
         plt.tight_layout()
         plt.show()
 
-        # === 2D-Gesamtplot: geschlossen + Vergleich ===
+        # 2D-Plot
         hits_2d  = to_plane_2d_coords(np.array(hits_projected),  p0, e1, e2)
         polys_2d = to_plane_2d_coords(np.array(polys_projected), p0, e1, e2)
 
