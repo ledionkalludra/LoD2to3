@@ -41,6 +41,13 @@ The data has been processed in this project for academic research purposes.
 
 ## Setup
 
+### external data
+
+The large models and image data are not included in the repository due to storage limitations. Place this files in the correct folder
+Down-Load-Link: https://1drv.ms/f/c/9a051f71d26d4954/Ejzjw0HG5ixMuLeYTkTAolABfdNiz-pJ1L-kv7IUlp6g4Q?e=bLSxrv
+
+### installation and paths
+
 This project works out of the box — no manual path adjustments are necessary. All scripts use relative paths, so once the repository is cloned and the dependencies are installed, it is ready to use.
 
 conda env create --name mein_env -f environment.yml
