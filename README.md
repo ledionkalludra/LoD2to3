@@ -53,4 +53,9 @@ This project works out of the box — no manual path adjustments are necessary. 
 conda env create --name mein_env -f environment.yml
 conda activate mein_env
 
+or 
+
+pip install -r requirements.txt
+
+
 
