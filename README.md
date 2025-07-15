@@ -37,7 +37,11 @@ According to the provider, attribution must be given as follows:
 
 The data has been processed in this project for academic research purposes.
 
+---
+
 ## Setup
+
+This project works out of the box — no manual path adjustments are necessary. All scripts use relative paths, so once the repository is cloned and the dependencies are installed, it is ready to use.
 
 conda env create --name mein_env -f environment.yml
 conda activate mein_env
